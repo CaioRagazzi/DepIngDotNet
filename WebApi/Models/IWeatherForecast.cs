@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace WebApi
 {
@@ -8,5 +9,6 @@ namespace WebApi
         string Summary { get; set; }
         int TemperatureC { get; set; }
         int TemperatureF { get; }
+        public List<String> Weathers(String texto);
     }
 }

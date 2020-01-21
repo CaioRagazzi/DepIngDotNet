@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace WebApi
 {
@@ -11,5 +12,15 @@ namespace WebApi
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
         public string Summary { get; set; }
+
+        public List<String> Weathers(String texto)
+        {
+            return new List<string>
+            {
+                texto + "quente",
+                texto + "frio",
+                texto + "medio",
+            };
+        }
     }
 }
